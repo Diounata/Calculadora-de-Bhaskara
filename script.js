@@ -27,7 +27,7 @@ function start() {
 
         if (verificar_formularios == 3) {
             resultado.innerHTML = `
-                <p class="alert alert-primary p-1 my-2 mx-auto w-50 text-center rounded-pill">
+                <p class="alert alert-primary p-1 my-2 mx-auto col-12 col-md-6 text-center rounded-pill">
                     Equação: ${valores[0]}x² + ${valores[1]}x + ${valores[2]}
                 </p>
 
@@ -42,14 +42,14 @@ function start() {
 
             if (delta < 0) {
                 resultado.innerHTML += `
-                    <div class="alert alert-danger w-50 py-1 px-2 my-1">
+                    <div class="alert alert-danger py-1 px-2 my-1">
                         • Equação sem solução <br>
                         • Motivo: &Delta; < 0
                     </div>
                 `
             } else {
                 resultado.innerHTML += `
-                <p class="alert alert-success w-25 py-1 px-2 my-1">
+                <p class="alert alert-success py-1 px-2 my-1">
                     x' = ${resultado1} <br>
                     x" = ${resultado2}
                 </p>
